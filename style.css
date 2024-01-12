@@ -22,9 +22,9 @@ h1{
     justify-content: center;
     flex-direction: column;
     height: 100svh;
-    min-width: 360px;
+    /* min-width: 350px; */
     font-family: var(--font-f);
-    gap: 10px;
+    margin: 10px;
 }
 
 .input-container{
