@@ -1,0 +1,81 @@
+:root{
+    --main-bg-color: #052b7c;
+    --main-hover-color: #0941b9;
+    --main-font-color: #fff;
+    --input-border-color: #dddddd;
+    --nav-border-color: #e8e8e8;
+    --err-color: #b90909;
+    --font-f: Arial, Helvetica, sans-serif;
+}
+
+body {
+    
+    margin: 0;
+}
+
+h1{
+    margin: 15px 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100svh;
+    font-family: var(--font-f);
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+
+
+.inputs{
+    min-width: 100px;
+    padding: 45px 25px;
+    border: 2px solid var(--input-border-color);
+    font-size: 22px;
+    outline: none;
+    /* border: none; */
+    text-align: center;
+    letter-spacing: 6px;
+}
+        
+    .inputs:focus{
+        border: 2px solid var(--main-hover-color);
+        /* border-radius: 5px; */
+        /* border: none; */
+    }
+
+
+
+#bpm-num, #tap-counter, #timer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    /* border: 2px solid var(--input-border-color); */
+    padding: 10px;
+}
+
+
+.style-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 22px 35px;
+    margin-top: 10px;
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
+    font-size: 17px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.style-btn:hover{
+    background-color: var(--main-hover-color);
+}
