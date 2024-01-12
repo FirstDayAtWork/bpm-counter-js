@@ -22,8 +22,10 @@ h1{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    min-width: 360px;
     height: 100svh;
     font-family: var(--font-f);
+    gap: 10px;
 }
 
 .input-container{
