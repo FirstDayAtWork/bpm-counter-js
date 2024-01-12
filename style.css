@@ -8,9 +8,7 @@
     --font-f: Arial, Helvetica, sans-serif;
 }
 
-body {
 
-}
 
 h1{
     margin: 15px 0;
@@ -21,10 +19,7 @@ h1{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100svh;
-    /* min-width: 350px; */
     font-family: var(--font-f);
-    margin: 10px;
 }
 
 .input-container{
@@ -41,15 +36,12 @@ h1{
     border: 2px solid var(--input-border-color);
     font-size: 22px;
     outline: none;
-    /* border: none; */
     text-align: center;
     letter-spacing: 6px;
 }
         
     .inputs:focus{
         border: 2px solid var(--main-hover-color);
-        /* border-radius: 5px; */
-        /* border: none; */
     }
 
 
