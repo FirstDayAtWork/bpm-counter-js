@@ -32,9 +32,7 @@ function tapPerBpm(){
         if (secs < 10) secs = `0${secs}`;
         if (mins < 10) mins = `0${mins}`;
 
-
         bpmTap.value = '';
-        bpmTap.textContent = `${bpm}`
         bpmNum.children[0].innerText = `${bpm}`
         tapCounter.children[0].innerText = `${count}`
         timeSec.children[0].innerText = `${mins}:${secs}`
