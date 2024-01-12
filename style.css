@@ -1,6 +1,6 @@
 :root{
-    --main-bg-color: #052b7c;
-    --main-hover-color: #0941b9;
+    --main-bg-color: #059862;
+    --main-hover-color: #06bb78;
     --main-font-color: #fff;
     --input-border-color: #dddddd;
     --nav-border-color: #e8e8e8;
@@ -70,7 +70,7 @@ h1{
     margin-top: 10px;
     background-color: var(--main-bg-color);
     color: var(--main-font-color);
-    font-size: 17px;
+    font-size: 20px;
     border: none;
     border-radius: 3px;
     cursor: pointer;

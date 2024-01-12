@@ -8,9 +8,9 @@ function tapPerBpm(){
     let count = 0;
     let start = 0;
     let first = 0;
-    let prev = 0;
     let bpm = 0;
-    
+    let mins = 0;
+    let secs = 0;
 
     bpmTap.addEventListener('input', () => {
         // show time since first click in msec
@@ -25,20 +25,28 @@ function tapPerBpm(){
             count++
         }
     
+        // show cur time
+        mins = Math.floor((start - first) / 60000);
+        secs = Math.floor((start - first) / 1000) % 60;
+        
+        if (secs < 10) secs = `0${secs}`;
+        if (mins < 10) mins = `0${mins}`;
+
+
         bpmTap.value = '';
+        bpmTap.textContent = `${bpm}`
         bpmNum.children[0].innerText = `${bpm}`
         tapCounter.children[0].innerText = `${count}`
-        timeSec.children[0].innerText = `${Math.round((start - first) / 1000)}`
-        prev = start
+        timeSec.children[0].innerText = `${mins}:${secs}`
     })
 
 
     resetButton.addEventListener('click', () => {
         count = 0;
         bpm = 0;
-        bpmNum.children[0].innerText = ``
-        tapCounter.children[0].innerText = ``
-        timeSec.children[0].innerText = ``
+        bpmNum.children[0].innerText = `0`
+        tapCounter.children[0].innerText = `0`
+        timeSec.children[0].innerText = `00:00`
     })
 
 }
