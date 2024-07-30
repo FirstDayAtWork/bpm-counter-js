@@ -8,7 +8,14 @@
     --font-f: Arial, Helvetica, sans-serif;
 }
 
+*{
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+    padding: 0;
+}
 
 h1{
     margin: 15px 0;
@@ -20,24 +27,28 @@ h1{
     justify-content: center;
     flex-direction: column;
     font-family: var(--font-f);
+    margin: 0 10px;
 }
 
 .input-container{
     display: flex;
     flex-direction: column;
     gap: 2px;
+    width: 100%;
+    max-width: 700px;
 }
 
 
 
 .inputs{
-    min-width: 100px;
-    padding: 45px 25px;
+    min-height: 320px;
     border: 2px solid var(--input-border-color);
-    font-size: 22px;
+    border-radius: 17px;
+    font-size: 1.5rem;
     outline: none;
     text-align: center;
     letter-spacing: 6px;
+    touch-action: none;
 }
         
     .inputs:focus{
@@ -50,7 +61,7 @@ h1{
     display: flex;
     justify-content: space-between;
     font-size: 25px;
-    /* border: 2px solid var(--input-border-color); */
+    border-bottom: 1px solid var(--input-border-color);
     padding: 10px;
 }
 
