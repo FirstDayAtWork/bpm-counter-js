@@ -37,12 +37,8 @@ function tapPerBpm(){
         tapCounter.children[0].innerText = `${count}`
         timeSec.children[0].innerText = `${mins}:${secs}`
     }
-
-
     bpmTap.addEventListener('input', tapEvent);
     bpmTap.addEventListener('click', tapEvent);
-
-
     resetButton.addEventListener('click', () => {
         count = 0;
         bpm = 0;
